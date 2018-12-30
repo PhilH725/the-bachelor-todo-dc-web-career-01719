@@ -55,8 +55,7 @@ def get_average_age_for_season(data, season)
   end
   total = 0
   ages_array.each do |i|
-    i.to_i
-    total += i
+    total += i.to_i
   end
   total / ages_array.length
 end
