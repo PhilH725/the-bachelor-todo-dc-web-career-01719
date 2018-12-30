@@ -25,7 +25,6 @@ def count_contestants_by_hometown(data, hometown)
   counter_hash = {}
   data.each do |season_number, contestants_array|
     contestants_array.each do |contestant_hash|
-      #puts contestant_hash["hometown"]
       if counter_hash[contestant_hash["hometown"]]
 	      counter_hash[contestant_hash["hometown"]] += 1
       else
