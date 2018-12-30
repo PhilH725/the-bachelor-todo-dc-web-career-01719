@@ -49,4 +49,7 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  ages_array = []
+  data[season].each do |contestant_hash|
+    ages_array << contestant_hash["age"]
 end
